@@ -140,8 +140,11 @@ Package:
 #### Assessment Methodology
 Moss Adams, LLP (Moss Adams) is the accredited FedRAMP Third Party Assessment Organization (3PAO) for Flock Safety (Flock) for the FedRAMP 20x pilot assessment of Flock’s product, Flock Safety Platform.
 Moss Adams performed an assessment of the Key Security Indicators (KSIs) for Flock Safety Platform. The assessment methodology included documentation reviews, direct system observations, interviews, configuration testing, and evaluation of manual control implementations.
+
 Each KSI was tested and evaluated against the provided KSI requirements and FedRAMP requirements to determine whether Flock Safety Platform fully met, partially met, or did not meet the specified criteria. The results of this evaluation have been documented in a machine-readable format, with each KSI marked as true (fully met), partial (partially met), or false (not met).
-Assessment deliverables were gathered, and assessment testing was documented within the Paramify, Inc. tool Paramify. The Paramify tool allows for machine readable export of the assessment results and allows Flock to deliver assessment deliverables to the FedRAMP PMO as needed.
+
+Assessment deliverables were gathered, and assessment testing was documented within the Paramify, Inc. tool Paramify. The Paramify tool allows for machine readable export of the assessment results and allows Flock to 
+deliver assessment deliverables to the FedRAMP PMO as needed.
 
 ### Step 6 - Continuous Reporting Indication
 Either on-demand or per an automated schedule, a new package will be generated with the most current evidence using Paramify's DocRobot capability.
