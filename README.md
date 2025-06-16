@@ -137,8 +137,9 @@ Package:
     remarks: <assessment remarks>
 ```
 
-#### Assessment Methodology
-![Assessment Methodolgy](https://github.com/flocksafety/flock-core-fedramp20x/blob/master/images/Assessment%20Methodology.pdf)
+#### <a href="https://flocksafety.com](https://github.com/flocksafety/flock-core-fedramp20x/blob/master/images/Assessment%20Methodology.pdf">
+   Assessment Methodology</a>
+![Assessment Methodolgy](https://raw.githubusercontent.com/flocksafety/flock-core-fedramp20x/refs/heads/master/images/Signed%203PAO%20Assessment%20Methodology.png?token=GHSAT0AAAAAAC5XQLLV6AK7AAUUKU6YYZWE2CQG7DA)
 
 ### Step 6 - Continuous Reporting Indication
 Either on-demand or per an automated schedule, a new package will be generated with the most current evidence using Paramify's DocRobot capability.
