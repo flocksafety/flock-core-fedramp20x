@@ -1,6 +1,6 @@
 <p align="center">
    <a href="https://flocksafety.com">
-     <img src="https://raw.githubusercontent.com/flock-auditor/coffeecup/main/images/Flock-Logo.png?raw=true" awidth="100%">
+     <img src="https://raw.githubusercontent.com/flocksafety/flock-core-fedramp20x/refs/heads/master/images/Flock-Logo.png" awidth="100%">
    </a>
 </p>
 
