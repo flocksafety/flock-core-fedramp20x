@@ -118,7 +118,7 @@ Package:
 
 (see [Signed 3PAO Assessment Methodology](https://github.com/flocksafety/flock-core-fedramp20x/blob/c87cad23c6af2f8a1c4f91ee3697843cbf745735/images/Assessment%20Methodology.pdf))
 
-![Assessment Methodolgy](https://raw.githubusercontent.com/flocksafety/flock-core-fedramp20x/refs/heads/master/images/Signed%203PAO%20Assessment%20Methodology.png?token=GHSAT0AAAAAAC5XQLLV6AK7AAUUKU6YYZWE2CQG7DA)
+![https://raw.githubusercontent.com/flocksafety/flock-core-fedramp20x/refs/heads/master/images/Signed%203PAO%20Assessment%20Methodology.png?token=GHSAT0AAAAAAC5XQLLV6AK7AAUUKU6YYZWE2CQG7DA](https://raw.githubusercontent.com/flocksafety/flock-core-fedramp20x/refs/heads/master/images/Signed%203PAO%20Assessment%20Methodology.png?token=GHSAT0AAAAAAC5XQLLUPM7JKBD5IZYUWQXU2CQJXUQ)
 
 ### Step 6 - Continuous Reporting Indication
 Either on-demand or per an automated schedule, a new package will be generated with the most current evidence using Paramify's DocRobot capability.
