@@ -116,7 +116,7 @@ Package:
 
 #### Assessment Methodology</a>
 
-(see [machine-readable-package/schema.yaml](https://github.com/flocksafety/flock-core-fedramp20x/blob/master/images/Assessment%20Methodology.pdf))
+(see [Signed 3PAO Assessment Methodology](https://github.com/flocksafety/flock-core-fedramp20x/blob/master/images/Assessment%20Methodology.pdf))
 
 ![Assessment Methodolgy](https://raw.githubusercontent.com/flocksafety/flock-core-fedramp20x/refs/heads/master/images/Signed%203PAO%20Assessment%20Methodology.png?token=GHSAT0AAAAAAC5XQLLV6AK7AAUUKU6YYZWE2CQG7DA)
 
