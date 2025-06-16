@@ -48,15 +48,15 @@ Our approach can be summarized with the following steps:
 
 ### Step 1 – Lightweight Documentation
 Document the implementation of our KSIs using Paramify Cloud with the FedRAMP 20x validations set.
-![KSI Implementation Status](https://github.com/flock-auditor/coffeecup/blob/main/images/Paramify%20-%20KSI%20Implementation.png)
+![KSI Implementation Status](https://raw.githubusercontent.com/flocksafety/flock-core-fedramp20x/refs/heads/master/images/Paramify%20-%20KSI%20Implementation.png)
 
 ### Step 2 – Key Security Indicators and Validations
 Gather and upload evidence into Paramify Cloud for each KSI validation, using automation where possible.
-![Evidence Repo](https://github.com/flock-auditor/coffeecup/blob/main/images/Paramify%20-%20Evidence%20Repo.png)
+![Evidence Repo](https://raw.githubusercontent.com/flocksafety/flock-core-fedramp20x/refs/heads/master/images/Paramify%20-%20Evidence%20Repo.png)
 
 ### Step 3 – Validate Evidence
 Meet with 3PAO and have them review and validate evidence in Paramify Cloud. 3PAO can set Assurance Steps/Results, Assurance Status, and leave notes or remarks. 
-![3PAO Assurance](https://github.com/flock-auditor/coffeecup/blob/main/images/Paramify%20-%203PAO%20Assessment.png)
+![3PAO Assurance](https://raw.githubusercontent.com/flocksafety/flock-core-fedramp20x/refs/heads/master/images/Paramify%20-%203PAO%20Assessment.png)
 
 Flock Safety is working with Baker Tilly, formerly known as Moss Adams, as 3PAO.
 
@@ -118,7 +118,7 @@ Package:
 
 (see [Signed 3PAO Assessment Methodology](https://github.com/flocksafety/flock-core-fedramp20x/blob/c87cad23c6af2f8a1c4f91ee3697843cbf745735/images/Assessment%20Methodology.pdf))
 
-![https://raw.githubusercontent.com/flocksafety/flock-core-fedramp20x/refs/heads/master/images/Signed%203PAO%20Assessment%20Methodology.png?token=GHSAT0AAAAAAC5XQLLV6AK7AAUUKU6YYZWE2CQG7DA](https://raw.githubusercontent.com/flocksafety/flock-core-fedramp20x/refs/heads/master/images/Signed%203PAO%20Assessment%20Methodology.png?token=GHSAT0AAAAAAC5XQLLUPM7JKBD5IZYUWQXU2CQJXUQ)
+![https://raw.githubusercontent.com/flocksafety/flock-core-fedramp20x/refs/heads/master/images/Signed%203PAO%20Assessment%20Methodology.png?token=GHSAT0AAAAAAC5XQLLV6AK7AAUUKU6YYZWE2CQG7DA](https://raw.githubusercontent.com/flocksafety/flock-core-fedramp20x/refs/heads/master/images/Signed%203PAO%20Assessment%20Methodology.png)
 
 ### Step 6 - Continuous Reporting Indication
 Either on-demand or per an automated schedule, a new package will be generated with the most current evidence using Paramify's DocRobot capability.
