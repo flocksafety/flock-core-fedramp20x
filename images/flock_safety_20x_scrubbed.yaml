@@ -1,0 +1,1468 @@
+Package:
+  CSPName: Flock Safety
+  CSO: Flock Safety Platform
+  impact: Low
+  summaryOfCSO: 'Flock Safety is a public safety solution that assists cities, businesses, schools, and law enforcement agencies in collaboratively eliminating crime and maintaining community safety. Flock develops and manufactures license plate reading (LPR) technology, audio recognition sensors, video cameras, and accompanying software to capture objective evidence required by law enforcement to solve crimes.'
+  Assessments:
+  - Assessment:
+      digitalSignature: bca7a2418c7ae582a6a3fb6c68f5d5c39ce31bec4153a3b302841e86eedfc5e2
+      assessorOrg: Moss Adams LLP
+      date: 6/13/2025
+      leadAssessor: Scott Hoopes
+      recommendation: Authorize
+      remarks: |
+        'Flock Safety demonstrated a sufficient security posture and achieved satisfactory results against most FedRAMP Low Key Security Indicators (KSIs). Flock was able to quickly provide strong evidence of passed KSI implementations, often exceeding the Low baseline requirements. Furthermore, Flock maintains a mature Governance, Risk, and Compliance (GRC) framework and takes a proactive approach to managing security and compliance obligations.'
+      assessmentMethodology: |
+        'Moss Adams, LLP (Moss Adams) is the accredited FedRAMP Third Party Assessment Organization (3PAO) for Flock Safety (Flock) for the FedRAMP 20x pilot assessment of Flock's product, Flock Safety Platform. Moss Adams performed an assessment of the Key Security Indicators (KSIs) for Flock Safety Platform. The assessment methodology included documentation reviews, direct system observations, interviews, configuration testing, and evaluation of manual control implementations. Each KSI was tested and evaluated against the provided KSI requirements and FedRAMP requirements to determine whether Flock Safety Platform fully met, partially met, or did not meet the specified criteria. The results of this evaluation have been documented in a machine-readable format, with each KSI marked as true (fully met), partial (partially met), or false (not met). Assessment deliverables were gathered, and assessment testing was documented within the Paramify, Inc. tool Paramify. The Paramify tool allows for machine readable export of the assessment results and allows Flock to deliver assessment deliverables to the FedRAMP PMO as needed.'
+      KSIs:
+      - KSI:
+          name: Cloud Native Architecture
+          shortName: CNA
+          Validations:
+          - validation:
+              shortName: CNA-01
+              description: Configure ALL information resources to limit inbound and outbound traffic
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: CNA-01 - Security Group Sample.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-01/CNA-01/CNA-01 Security Group Sample Testing/CNA-01 - Security Group Sample.pdf
+          - validation:
+              shortName: CNA-02
+              description: Design systems to minimize the attack surface and minimize lateral movement if compromised
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Flock Core - Processing Pipeline.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-02/CNA-02/AWS GovCloud - Processing Pipeline/Flock Core - Processing Pipeline.png
+              - evidence:
+                  name: Flock Core - Processing Pipeline.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-02/CNA-02/AWS Commercial - Processing Pipeline/Flock Core - Processing Pipeline.png
+              - evidence:
+                  name: Flock Core - FedRAMP 20X - Minimum Assessment Scope.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-02/CNA-02/Flock Core - Minimum Assessment Scope/Flock Core - FedRAMP 20X - Minimum Assessment Scope.pdf
+              - evidence:
+                  name: Flock Core - FedRAMP 20X - Minimum Assessment Scope.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-02/CNA-02/Flock Core - Minimum Assessment Scope/Flock Core - FedRAMP 20X - Minimum Assessment Scope.png
+          - validation:
+              shortName: CNA-03
+              description: Use logical networking and related capabilities to enforce traffic flow controls
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: AWS GovCloud - Shield Standard.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-03/CNA-03/AWS GovCloud - Shield Standard/AWS GovCloud - Shield Standard.png
+              - evidence:
+                  name: Shield implemented in AWS.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-03/CNA-03/AWS GovCloud - Shield Standard/Shield implemented in AWS.png
+              - evidence:
+                  name: Flock Core - AWS Commercial - WAF - AWS Managed Rules Enabled.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-03/CNA-03/AWS Commercial - WAF - AWS Managed Rules/Flock Core - AWS Commercial - WAF - AWS Managed Rules Enabled.png
+              - evidence:
+                  name: AWS GovCloud - Security Groups-2.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-03/CNA-03/AWS GovCloud - Production Security Groups/AWS GovCloud - Security Groups-2.xlsx
+              - evidence:
+                  name: AWS GovCloud - Security Groups.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-03/CNA-03/AWS GovCloud - Production Security Groups/AWS GovCloud - Security Groups.xlsx
+              - evidence:
+                  name: Wiz - AWS Commercial - Prod Flock Security Groups-2.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-03/CNA-03/AWS Commercial - Production Security Groups/Wiz - AWS Commercial - Prod Flock Security Groups-2.xlsx
+              - evidence:
+                  name: Wiz - AWS Commercial - Prod Flock Security Groups.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-03/CNA-03/AWS Commercial - Production Security Groups/Wiz - AWS Commercial - Prod Flock Security Groups.xlsx
+              - evidence:
+                  name: Wiz - AWS Commercial - DDOS Protection.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-03/CNA-03/AWS Commercial - AWS Shield/Wiz - AWS Commercial - DDOS Protection.xlsx
+              - evidence:
+                  name: CNA-05 - AWS Shield is active.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-03/CNA-03/AWS Commercial - AWS Shield/CNA-05 - AWS Shield is active.png
+          - validation:
+              shortName: CNA-04
+              description: Use immutable infrastructure with strictly defined functionality and privileges by default
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: AWS GovCloud - Production EKS Clusters.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-04/CNA-04/AWS GovCloud - Production EKS Clusters/AWS GovCloud - Production EKS Clusters.xlsx
+              - evidence:
+                  name: AWS GovCloud - EKS Clusters Multi-AZ.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-04/CNA-04/AWS GovCloud - Multi AZ EKS Clusters/AWS GovCloud - EKS Clusters Multi-AZ.xlsx
+              - evidence:
+                  name: Wiz - AWS Commercial - Prod EKS Clusters.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-04/CNA-04/AWS Commercial - EKS Clusters/Wiz - AWS Commercial - Prod EKS Clusters.xlsx
+              - evidence:
+                  name: Github - Flock - Terraform - Multi AZ EKS.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-04/CNA-04/Github - Terraform - EKS Multi AZ/Github - Flock - Terraform - Multi AZ EKS.png
+              - evidence:
+                  name: Flock Core - Processing Pipeline.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-04/CNA-04/AWS GovCloud - Processing Pipeline/Flock Core - Processing Pipeline.png
+              - evidence:
+                  name: AWS Commercial - Wiz - Production EKS Clusters.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-04/CNA-04/AWS Commercial - Multi AZ EKS Clusters/AWS Commercial - Wiz - Production EKS Clusters.xlsx
+              - evidence:
+                  name: Flock Core - Processing Pipeline.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-04/CNA-04/AWS Commercial - Processing Pipeline/Flock Core - Processing Pipeline.png
+          - validation:
+              shortName: CNA-05
+              description: Have denial of service protection
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Flock Core - Processing Pipeline.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-05/CNA-05/AWS GovCloud - Processing Pipeline/Flock Core - Processing Pipeline.png
+              - evidence:
+                  name: Flock Core - Processing Pipeline.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-05/CNA-05/AWS Commercial - Processing Pipeline/Flock Core - Processing Pipeline.png
+              - evidence:
+                  name: Wiz - AWS Commercial - DDOS Protection.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-05/CNA-05/AWS Commercial - AWS Shield/Wiz - AWS Commercial - DDOS Protection.xlsx
+              - evidence:
+                  name: CNA-05 - AWS Shield is active.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-05/CNA-05/AWS Commercial - AWS Shield/CNA-05 - AWS Shield is active.png
+          - validation:
+              shortName: CNA-06
+              description: Design systems for high availability and rapid recovery
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: AWS_SSP-Appendix-J_CIS-and-CRM-Workbook_v24.05-FINAL - Inheritable Controls.csv
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-06/CNA-06/AWS Commercial - CRM - Inheritable Controls/AWS_SSP-Appendix-J_CIS-and-CRM-Workbook_v24.05-FINAL - Inheritable Controls.csv
+              - evidence:
+                  name: Github - Flock - Terraform - Multi AZ EKS.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-06/CNA-06/Github - Terraform - EKS Multi AZ/Github - Flock - Terraform - Multi AZ EKS.png
+          - validation:
+              shortName: CNA-07
+              description: Ensure cloud-native information resources are implemented based on host provider's best practices and documented guidance
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: AWS Commercial - Wiz - CIS 3.0 - Infrastructure and Network Hardening.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-07/CNA-07/AWS Commercial - Wiz - CIS 3.0 AWS Benchmarks/AWS Commercial - Wiz - CIS 3.0 - Infrastructure and Network Hardening.png
+              - evidence:
+                  name: CMP CIS Benchmarks.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-07/CNA-07/AWS GovCloud - Wiz - CIS 3.0 AWS Benchmarks/CMP CIS Benchmarks.png
+              - evidence:
+                  name: AWS GovCloud - Wiz - AWS 3.0 Scanning.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cloud Native Architecture (CNA_KSI)/CNA-07/CNA-07/AWS GovCloud - Wiz - CIS 3.0 AWS Benchmarks/AWS GovCloud - Wiz - AWS 3.0 Scanning.png
+      - KSI:
+          name: Service Configuration
+          shortName: SVC
+          Validations:
+          - validation:
+              shortName: SVC-01
+              description: Harden and review network and system configurations
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: AWS GovCloud - Shield Standard.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-01/SVC-01/AWS GovCloud - Shield Standard/AWS GovCloud - Shield Standard.png
+              - evidence:
+                  name: Shield implemented in AWS.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-01/SVC-01/AWS GovCloud - Shield Standard/Shield implemented in AWS.png
+              - evidence:
+                  name: AWS Commercial - Wiz - CIS 3.0 - Infrastructure and Network Hardening.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-01/SVC-01/AWS Commercial - Wiz - CIS 3.0 AWS Benchmarks/AWS Commercial - Wiz - CIS 3.0 - Infrastructure and Network Hardening.png
+              - evidence:
+                  name: Flock Core - AWS Commercial - WAF - AWS Managed Rules Enabled.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-01/SVC-01/AWS Commercial - WAF - AWS Managed Rules/Flock Core - AWS Commercial - WAF - AWS Managed Rules Enabled.png
+              - evidence:
+                  name: AWS GovCloud - Security Groups-2.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-01/SVC-01/AWS GovCloud - Production Security Groups/AWS GovCloud - Security Groups-2.xlsx
+              - evidence:
+                  name: AWS GovCloud - Security Groups.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-01/SVC-01/AWS GovCloud - Production Security Groups/AWS GovCloud - Security Groups.xlsx
+              - evidence:
+                  name: Wiz - AWS Commercial - Prod Flock Security Groups-2.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-01/SVC-01/AWS Commercial - Production Security Groups/Wiz - AWS Commercial - Prod Flock Security Groups-2.xlsx
+              - evidence:
+                  name: Wiz - AWS Commercial - Prod Flock Security Groups.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-01/SVC-01/AWS Commercial - Production Security Groups/Wiz - AWS Commercial - Prod Flock Security Groups.xlsx
+              - evidence:
+                  name: CMP CIS Benchmarks.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-01/SVC-01/AWS GovCloud - Wiz - CIS 3.0 AWS Benchmarks/CMP CIS Benchmarks.png
+              - evidence:
+                  name: AWS GovCloud - Wiz - AWS 3.0 Scanning.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-01/SVC-01/AWS GovCloud - Wiz - CIS 3.0 AWS Benchmarks/AWS GovCloud - Wiz - AWS 3.0 Scanning.png
+              - evidence:
+                  name: Wiz - AWS Commercial - DDOS Protection.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-01/SVC-01/AWS Commercial - AWS Shield/Wiz - AWS Commercial - DDOS Protection.xlsx
+              - evidence:
+                  name: CNA-05 - AWS Shield is active.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-01/SVC-01/AWS Commercial - AWS Shield/CNA-05 - AWS Shield is active.png
+          - validation:
+              shortName: SVC-02
+              description: Encrypt or otherwise secure network traffic
+              implementationStatus: 'Partial'
+              assessmentStatus: 'Partial'
+              Evidences:
+              - evidence:
+                  name: AWS FAQ - FIPS Endpoints.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-02/SVC-02/AWS Gov - AWS Console - FIPS Endpoints Load Balancers/AWS FAQ - FIPS Endpoints.png
+              - evidence:
+                  name: AWS GovCloud - Load Balancers in AWS Gov.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-02/SVC-02/AWS Gov - AWS Console - FIPS Endpoints Load Balancers/AWS GovCloud - Load Balancers in AWS Gov.png
+              - evidence:
+                  name: Lets Encrypt Certificate TLS 1.3.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-02/SVC-02/Flock Core - Front End TLS Certificate/Lets Encrypt Certificate TLS 1.3.png
+              - evidence:
+                  name: FlockOS - SSL_TLS Front End.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-02/SVC-02/Flock Core - Front End TLS Certificate/FlockOS - SSL_TLS Front End.png
+          - validation:
+              shortName: SVC-03
+              description: Encrypt all federal and sensitive information at rest
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: AWS GovCloud - Wiz - S3 Bucket Encryption at Rest.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-03/SVC-03/AWS GovCloud - Wiz - S3 Encryption at Rest/AWS GovCloud - Wiz - S3 Bucket Encryption at Rest.png
+              - evidence:
+                  name: AWS GovCloud - Wiz - RDS Encryption at Rest.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-03/SVC-03/AWS GovCloud - Wiz - RDS Encryption at Rest/AWS GovCloud - Wiz - RDS Encryption at Rest.png
+              - evidence:
+                  name: AWS Commercial - Wiz - RDS Encryption at Rest.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-03/SVC-03/AWS Commercial - Wiz - RDS Encryption at Rest/AWS Commercial - Wiz - RDS Encryption at Rest.png
+              - evidence:
+                  name: AWS Commercial - Wiz - S3 Bucket Encryption at Rest.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-03/SVC-03/AWS Commercial - Wiz - S3 Encryption/AWS Commercial - Wiz - S3 Bucket Encryption at Rest.png
+          - validation:
+              shortName: SVC-04
+              description: Manage configuration centrally
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Github - AWS Commercial - Flock Terraform.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-04/SVC-04/Github - flock-terraform Repo/Github - AWS Commercial - Flock Terraform.png
+          - validation:
+              shortName: SVC-05
+              description: Enforce system and information resource integrity through cryptographic means
+              implementationStatus: 'Partial'
+              assessmentStatus: 'Partial'
+              Evidences:
+              - evidence:
+                  name: AWS GovCloud - Wiz - S3 Bucket Encryption at Rest.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-05/SVC-05/AWS GovCloud - Wiz - S3 Encryption at Rest/AWS GovCloud - Wiz - S3 Bucket Encryption at Rest.png
+              - evidence:
+                  name: AWS GovCloud - Wiz - RDS Encryption at Rest.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-05/SVC-05/AWS GovCloud - Wiz - RDS Encryption at Rest/AWS GovCloud - Wiz - RDS Encryption at Rest.png
+              - evidence:
+                  name: Lets Encrypt Certificate TLS 1.3.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-05/SVC-05/Flock Core - Front End TLS Certificate/Lets Encrypt Certificate TLS 1.3.png
+              - evidence:
+                  name: FlockOS - SSL_TLS Front End.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-05/SVC-05/Flock Core - Front End TLS Certificate/FlockOS - SSL_TLS Front End.png
+              - evidence:
+                  name: AWS Commercial - Wiz - RDS Encryption at Rest.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-05/SVC-05/AWS Commercial - Wiz - RDS Encryption at Rest/AWS Commercial - Wiz - RDS Encryption at Rest.png
+              - evidence:
+                  name: RDS Encryption at Rest - KMS.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-05/SVC-05/AWS RDS, S3, and KMS/RDS Encryption at Rest - KMS.png
+              - evidence:
+                  name: S3 Encryption at Rest - KMS.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-05/SVC-05/AWS RDS, S3, and KMS/S3 Encryption at Rest - KMS.png
+              - evidence:
+                  name: KMS Key Policy.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-05/SVC-05/AWS RDS, S3, and KMS/KMS Key Policy.png
+              - evidence:
+                  name: AWS Commercial - Wiz - S3 Bucket Encryption at Rest.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-05/SVC-05/AWS Commercial - Wiz - S3 Encryption/AWS Commercial - Wiz - S3 Bucket Encryption at Rest.png
+          - validation:
+              shortName: SVC-06
+              description: Use automated key management systems to manage, protect, and regularly rotate digital keys and certificates
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Wiz - AWS Commercial - KMS Keys Rotation Enabled.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-06/SVC-06/AWS Commercial - Wiz - KMS Key Rotation Enabled/Wiz - AWS Commercial - KMS Keys Rotation Enabled.xlsx
+              - evidence:
+                  name: AWS GovCloud - Wiz - KMS Key Rotation Enabled.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-06/SVC-06/AWS GovCloud - Wiz - KMS Key Rotation Enabled/AWS GovCloud - Wiz - KMS Key Rotation Enabled.xlsx
+          - validation:
+              shortName: SVC-07
+              description: Use a consistent, risk-informed approach for applying security patches
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Github - Slack Convo - AWS Karpenter Auto Disruption Every 30 Days.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-07/SVC-07/Karpenter - Auto Disruption - 720h or 30d/Github - Slack Convo - AWS Karpenter Auto Disruption Every 30 Days.png
+              - evidence:
+                  name: Github - Karpenter - 720h (30Days).png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-07/SVC-07/Karpenter - Auto Disruption - 720h or 30d/Github - Karpenter - 720h (30Days).png
+              - evidence:
+                  name: Configuration Management Plan StateRAMP.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-07/SVC-07/Flock - Configuration Management Plan/Configuration Management Plan StateRAMP.pdf
+              - evidence:
+                  name: Configuration Management Plan - Peer Review Requirement.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Service Configuration (SVC_KSI)/SVC-07/SVC-07/Flock - Configuration Management Plan/Configuration Management Plan - Peer Review Requirement.png
+      - KSI:
+          name: Identity and Access Management
+          shortName: IAM
+          Validations:
+          - validation:
+              shortName: IAM-01
+              description: Enforce multi-factor authentication (MFA) using methods that are difficult to intercept or impersonate (phishing-resistant MFA) for all user authentication
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Okta - Configuration - MFA Enforced for Everyone.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-01/IAM-01/Okta - TOTP for Everyone/Okta - Configuration - MFA Enforced for Everyone.png
+              - evidence:
+                  name: Okta - Configuration - Phishing Resistant MFA for Admins.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-01/IAM-01/Okta - Yubikey for Admins/Okta - Configuration - Phishing Resistant MFA for Admins.png
+              - evidence:
+                  name: Auth0 - MFA.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-01/IAM-01/Auth0 - MFA/Auth0 - MFA.png
+          - validation:
+              shortName: IAM-02
+              description: Use secure passwordless methods for user authentication and authorization when feasible, otherwise enforce strong passwords with MFA
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Auth0 - Password Policies.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-02/IAM-02/Auth0 - Strong Password Requirements/Auth0 - Password Policies.png
+              - evidence:
+                  name: Auth0 - Passkey Authentication.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-02/IAM-02/Auth0 - Strong Password Requirements/Auth0 - Passkey Authentication.png
+              - evidence:
+                  name: Okta - Configuration - MFA Enforced for Everyone.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-02/IAM-02/Okta - TOTP for Everyone/Okta - Configuration - MFA Enforced for Everyone.png
+              - evidence:
+                  name: Auth0 - Customer Redacted.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-02/IAM-02/Auth0 - SSO/SAML/Auth0 - Customer Redacted.png
+              - evidence:
+                  name: Okta - Configuration - Phishing Resistant MFA for Admins.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-02/IAM-02/Okta - Yubikey for Admins/Okta - Configuration - Phishing Resistant MFA for Admins.png
+              - evidence:
+                  name: Okta - Configuration - Strong Passwords for Admins.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-02/IAM-02/Okta - Strong Password Requirements for Admins/Okta - Configuration - Strong Passwords for Admins.png
+              - evidence:
+                  name: Okta - Configuration - Strong Passwords for All.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-02/IAM-02/Okta - Strong Password Requirements for All/Okta - Configuration - Strong Passwords for All.png
+              - evidence:
+                  name: Auth0 - MFA.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-02/IAM-02/Auth0 - MFA/Auth0 - MFA.png
+          - validation:
+              shortName: IAM-03
+              description: Enforce appropriately secure authentication methods for non-user accounts and services
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Auth0 - Password Policies.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-03/IAM-03/Auth0 - Strong Password Requirements/Auth0 - Password Policies.png
+              - evidence:
+                  name: Auth0 - Passkey Authentication.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-03/IAM-03/Auth0 - Strong Password Requirements/Auth0 - Passkey Authentication.png
+              - evidence:
+                  name: Okta - Configuration - MFA Enforced for Everyone.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-03/IAM-03/Okta - TOTP for Everyone/Okta - Configuration - MFA Enforced for Everyone.png
+              - evidence:
+                  name: Auth0 - Customer Redacted.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-03/IAM-03/Auth0 - SSO/SAML/Auth0 - Customer Redacted.png
+              - evidence:
+                  name: Okta - Configuration - Strong Passwords for All.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-03/IAM-03/Okta - Strong Password Requirements for All/Okta - Configuration - Strong Passwords for All.png
+              - evidence:
+                  name: Auth0 - MFA.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-03/IAM-03/Auth0 - MFA/Auth0 - MFA.png
+          - validation:
+              shortName: IAM-04
+              description: Use a least-privileged, role and attribute-based, and just-in-time security authorization model for all user and non-user accounts and services
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Okta Groups.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-04/IAM-04/Okta - Group Based Access/Okta Groups.xlsx
+              - evidence:
+                  name: Okta - Example - Jerome Assigned Groups.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-04/IAM-04/Okta - Group Based Access/Okta - Example - Jerome Assigned Groups.png
+              - evidence:
+                  name: ISE-Application Access Sheet-110625-202820.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-04/IAM-04/Okta - Access Groups - Authorization/ISE-Application Access Sheet-110625-202820.pdf
+              - evidence:
+                  name: FlockOS - Demo - Separate Roles for User and System Functionality.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-04/IAM-04/Auth0 - User Roles/FlockOS - Demo - Separate Roles for User and System Functionality.pdf
+          - validation:
+              shortName: IAM-05
+              description: Apply zero trust design principles
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Okta Groups.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/Okta - Group Based Access/Okta Groups.xlsx
+              - evidence:
+                  name: Okta - Example - Jerome Assigned Groups.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/Okta - Group Based Access/Okta - Example - Jerome Assigned Groups.png
+              - evidence:
+                  name: Auth0 - Password Policies.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/Auth0 - Strong Password Requirements/Auth0 - Password Policies.png
+              - evidence:
+                  name: Auth0 - Passkey Authentication.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/Auth0 - Strong Password Requirements/Auth0 - Passkey Authentication.png
+              - evidence:
+                  name: Okta - Configuration - MFA Enforced for Everyone.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/Okta - TOTP for Everyone/Okta - Configuration - MFA Enforced for Everyone.png
+              - evidence:
+                  name: FlockOS - Demo - Separate Roles for User and System Functionality.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/Auth0 - User Roles/FlockOS - Demo - Separate Roles for User and System Functionality.pdf
+              - evidence:
+                  name: Auth0 - Customer Redacted.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/Auth0 - SSO/SAML/Auth0 - Customer Redacted.png
+              - evidence:
+                  name: CISA - Zero Trust Checklist.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/CISA - Zero Trust Audit Checklist/CISA - Zero Trust Checklist.pdf
+              - evidence:
+                  name: AWS Commercial - Wiz - CIS 3.0 - Infrastructure and Network Hardening.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/AWS Commercial - Wiz - CIS 3.0 AWS Benchmarks/AWS Commercial - Wiz - CIS 3.0 - Infrastructure and Network Hardening.png
+              - evidence:
+                  name: Flock Core - AWS Commercial - WAF - AWS Managed Rules Enabled.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/AWS Commercial - WAF - AWS Managed Rules/Flock Core - AWS Commercial - WAF - AWS Managed Rules Enabled.png
+              - evidence:
+                  name: Okta - Configuration - Phishing Resistant MFA for Admins.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/Okta - Yubikey for Admins/Okta - Configuration - Phishing Resistant MFA for Admins.png
+              - evidence:
+                  name: Okta - Configuration - Strong Passwords for Admins.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/Okta - Strong Password Requirements for Admins/Okta - Configuration - Strong Passwords for Admins.png
+              - evidence:
+                  name: AWS Commercial - Wiz - RDS Encryption at Rest.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/AWS Commercial - Wiz - RDS Encryption at Rest/AWS Commercial - Wiz - RDS Encryption at Rest.png
+              - evidence:
+                  name: AWS Commercial - GuardDuty.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/AWS Commercial - GuardDuty/AWS Commercial - GuardDuty.xlsx
+              - evidence:
+                  name: AWS Commercial - Wiz - S3 Bucket Encryption at Rest.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/AWS Commercial - Wiz - S3 Encryption/AWS Commercial - Wiz - S3 Bucket Encryption at Rest.png
+              - evidence:
+                  name: Okta - Configuration - Strong Passwords for All.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/Okta - Strong Password Requirements for All/Okta - Configuration - Strong Passwords for All.png
+              - evidence:
+                  name: Auth0 - MFA.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/Auth0 - MFA/Auth0 - MFA.png
+              - evidence:
+                  name: Wiz - AWS Commercial - Prod Flock Security Groups-2.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/AWS Commercial - Production Security Groups/Wiz - AWS Commercial - Prod Flock Security Groups-2.xlsx
+              - evidence:
+                  name: Wiz - AWS Commercial - Prod Flock Security Groups.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-05/IAM-05/AWS Commercial - Production Security Groups/Wiz - AWS Commercial - Prod Flock Security Groups.xlsx
+          - validation:
+              shortName: IAM-06
+              description: Automatically disable or otherwise secure accounts with privileged access in response to suspicious activity
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: SumoLogic - Alert Insights.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-06/IAM-06/SumoLogic - Insights/SumoLogic - Alert Insights.png
+              - evidence:
+                  name: SumoLogic - Closed Insights.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-06/IAM-06/SumoLogic - Insights/SumoLogic - Closed Insights.png
+              - evidence:
+                  name: Okta - Configuration - Strong Passwords for Admins.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-06/IAM-06/Okta - Strong Password Requirements for Admins/Okta - Configuration - Strong Passwords for Admins.png
+              - evidence:
+                  name: Okta - Configuration - Strong Passwords for All.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-06/IAM-06/Okta - Strong Password Requirements for All/Okta - Configuration - Strong Passwords for All.png
+              - evidence:
+                  name: Auth0 - Automated Attack Protection.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-06/IAM-06/Auth0 - Attack Protection/Auth0 - Automated Attack Protection.png
+              - evidence:
+                  name: Auth0 - Brute Force Detection - 5 Failed Logins.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Identity and Access Management (IAM_KSI)/IAM-06/IAM-06/Auth0 - Attack Protection/Auth0 - Brute Force Detection - 5 Failed Logins.png
+      - KSI:
+          name: Monitoring, Logging, and Auditing
+          shortName: MLA
+          Validations:
+          - validation:
+              shortName: MLA-01
+              description: Operate a Security Information and Event Management (SIEM) or similar system(s) for centralized, tamper-resistent logging of events, activities, and changes
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: SumoLogic - AWS Data Collectors.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-01/MLA-01/SumoLogic - Data Collectors/SumoLogic - AWS Data Collectors.png
+              - evidence:
+                  name: SumoLogic - Configuration - Data Collector Health.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-01/MLA-01/SumoLogic - Data Collectors/SumoLogic - Configuration - Data Collector Health.png
+              - evidence:
+                  name: SumoLogic - Tamper Proof FAQ.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-01/MLA-01/SumoLogic - Tamper Proof/SumoLogic - Tamper Proof FAQ.png
+          - validation:
+              shortName: MLA-02
+              description: Regularly review and audit logs
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: AirMDR - Response Example.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-02/MLA-02/AirMDR - Managed SOC - Response Example/AirMDR - Response Example.pdf
+              - evidence:
+                  name: SumoLogic - AWS Data Collectors.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-02/MLA-02/SumoLogic - Data Collectors/SumoLogic - AWS Data Collectors.png
+              - evidence:
+                  name: SumoLogic - Configuration - Data Collector Health.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-02/MLA-02/SumoLogic - Data Collectors/SumoLogic - Configuration - Data Collector Health.png
+              - evidence:
+                  name: FLOCK_Monthly_Customer_Report.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-02/MLA-02/AirMDR - Monthly Report/FLOCK_Monthly_Customer_Report.pdf
+              - evidence:
+                  name: SumoLogic - Alert Insights.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-02/MLA-02/SumoLogic - Insights/SumoLogic - Alert Insights.png
+              - evidence:
+                  name: SumoLogic - Closed Insights.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-02/MLA-02/SumoLogic - Insights/SumoLogic - Closed Insights.png
+              - evidence:
+                  name: AIRMDR Status Report May 15th - May 22nd.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-02/MLA-02/AirMDR - Incident Response Metrics/AIRMDR Status Report May 15th - May 22nd.pdf
+          - validation:
+              shortName: MLA-03
+              description: Rapidly detect and remediate or mitigate vulnerabilities
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Wiz - Example - Open Issues.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-03/MLA-03/AWS Commercial - Wiz - Open Issues/Wiz - Example - Open Issues.png
+              - evidence:
+                  name: AWS Commercial - Wiz - Closed Issues.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-03/MLA-03/AWS Commercial - Wiz - Closed Issues/AWS Commercial - Wiz - Closed Issues.png
+              - evidence:
+                  name: Wiz Issues - 3 Months.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-03/MLA-03/Wiz - Issue Population (3 Months)/Wiz Issues - 3 Months.xlsx
+              - evidence:
+                  name: AWS GovCloud - Wiz - Closed Issues.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-03/MLA-03/AWS GovCloud - Wiz - Closed Issues/AWS GovCloud - Wiz - Closed Issues.png
+          - validation:
+              shortName: MLA-04
+              description: Perform authenticated vulnerability scanning on information resources
+              implementationStatus: 'Partial'
+              assessmentStatus: 'Partial'
+              Evidences:
+              - evidence:
+                  name: FlockOS - 2024 Pen Test.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-04/MLA-04/Flock - Annual Third Party Penetration Test/FlockOS - 2024 Pen Test.pdf
+          - validation:
+              shortName: MLA-05
+              description: Perform Infrastructure as Code and configuration evaluation and testing
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Cycode - SAST Scanning All Github Orgs.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-05/MLA-05/Cycode - Static Application Security Testing (SAST) Scanning/Cycode - SAST Scanning All Github Orgs.png
+              - evidence:
+                  name: Cycode - IaC Scanning All Github Orgs.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-05/MLA-05/Cycode - Infrastructure as Code Scanning (IaC)/Cycode - IaC Scanning All Github Orgs.png
+          - validation:
+              shortName: MLA-06
+              description: Centrally track and prioritize the mitigation and/or remediation of identified vulnerabilities
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: AWS GovCloud - Wiz - Open Issues.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-06/MLA-06/AWS GovCloud - Wiz - Open Issues/AWS GovCloud - Wiz - Open Issues.png
+              - evidence:
+                  name: Wiz - Example - Open Issues.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-06/MLA-06/AWS Commercial - Wiz - Open Issues/Wiz - Example - Open Issues.png
+              - evidence:
+                  name: AWS Commercial - Wiz - Closed Issues.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-06/MLA-06/AWS Commercial - Wiz - Closed Issues/AWS Commercial - Wiz - Closed Issues.png
+              - evidence:
+                  name: Wiz Issues - 3 Months.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-06/MLA-06/Wiz - Issue Population (3 Months)/Wiz Issues - 3 Months.xlsx
+              - evidence:
+                  name: AWS GovCloud - Wiz - Closed Issues.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Monitoring, Logging, and Auditing (MLA_KSI)/MLA-06/MLA-06/AWS GovCloud - Wiz - Closed Issues/AWS GovCloud - Wiz - Closed Issues.png
+      - KSI:
+          name: Change Management
+          shortName: CMT
+          Validations:
+          - validation:
+              shortName: CMT-01
+              description: Log and monitor system modifications
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: AirMDR - Response Example.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-01/CMT-01/AirMDR - Managed SOC - Response Example/AirMDR - Response Example.pdf
+              - evidence:
+                  name: SumoLogic - AWS Data Collectors.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-01/CMT-01/SumoLogic - Data Collectors/SumoLogic - AWS Data Collectors.png
+              - evidence:
+                  name: SumoLogic - Configuration - Data Collector Health.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-01/CMT-01/SumoLogic - Data Collectors/SumoLogic - Configuration - Data Collector Health.png
+              - evidence:
+                  name: Github - Jira Mirrored Pull Requests.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-01/CMT-01/Github - Pull Requests/Github - Jira Mirrored Pull Requests.png
+              - evidence:
+                  name: Github - Branching - Version Controlled Branches.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-01/CMT-01/Github - Version Controlled Branches/Github - Branching - Version Controlled Branches.png
+              - evidence:
+                  name: Screenshot 2025-06-12 at 9.48.20 AM.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-01/CMT-01/SumoLogic - AWS Rules All Included/Screenshot 2025-06-12 at 9.48.20 AM.png
+              - evidence:
+                  name: Screenshot 2025-06-12 at 9.48.28 AM.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-01/CMT-01/SumoLogic - AWS Rules All Included/Screenshot 2025-06-12 at 9.48.28 AM.png
+              - evidence:
+                  name: Screenshot 2025-06-12 at 9.48.11 AM.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-01/CMT-01/SumoLogic - AWS Rules All Included/Screenshot 2025-06-12 at 9.48.11 AM.png
+              - evidence:
+                  name: Screenshot 2025-06-12 at 9.48.03 AM.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-01/CMT-01/SumoLogic - AWS Rules All Included/Screenshot 2025-06-12 at 9.48.03 AM.png
+              - evidence:
+                  name: Screenshot 2025-06-12 at 9.47.55 AM.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-01/CMT-01/SumoLogic - AWS Rules All Included/Screenshot 2025-06-12 at 9.47.55 AM.png
+          - validation:
+              shortName: CMT-02
+              description: Execute changes through redeployment of version controlled immutable resources rather than direct modification wherever possible
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Github - Jira Mirrored Pull Requests.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-02/CMT-02/Github - Pull Requests/Github - Jira Mirrored Pull Requests.png
+              - evidence:
+                  name: Github - Branching - Version Controlled Branches.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-02/CMT-02/Github - Version Controlled Branches/Github - Branching - Version Controlled Branches.png
+          - validation:
+              shortName: CMT-03
+              description: Implement automated testing and validation of changes prior to deployment
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Github - fireball-ts - Branch Protection Rules.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-03/CMT-03/Github - Branch Protection Rules/Github - fireball-ts - Branch Protection Rules.png
+              - evidence:
+                  name: Github - flock-terraform- Branch Protection Rules.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-03/CMT-03/Github - Branch Protection Rules/Github - flock-terraform- Branch Protection Rules.png
+              - evidence:
+                  name: Cycode - SAST Scanning All Github Orgs.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-03/CMT-03/Cycode - Static Application Security Testing (SAST) Scanning/Cycode - SAST Scanning All Github Orgs.png
+              - evidence:
+                  name: Configuration Management Plan StateRAMP.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-03/CMT-03/Flock - Configuration Management Plan/Configuration Management Plan StateRAMP.pdf
+              - evidence:
+                  name: Configuration Management Plan - Peer Review Requirement.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-03/CMT-03/Flock - Configuration Management Plan/Configuration Management Plan - Peer Review Requirement.png
+              - evidence:
+                  name: Cycode - IaC Scanning All Github Orgs.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-03/CMT-03/Cycode - Infrastructure as Code Scanning (IaC)/Cycode - IaC Scanning All Github Orgs.png
+          - validation:
+              shortName: CMT-04
+              description: Have a documented change management procedure
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Configuration Management Plan StateRAMP.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-04/CMT-04/Flock - Configuration Management Plan/Configuration Management Plan StateRAMP.pdf
+              - evidence:
+                  name: Configuration Management Plan - Peer Review Requirement.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-04/CMT-04/Flock - Configuration Management Plan/Configuration Management Plan - Peer Review Requirement.png
+          - validation:
+              shortName: CMT-05
+              description: Evaluate the risk and potential impact of any change
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Github - fireball-ts - Branch Protection Rules.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-05/CMT-05/Github - Branch Protection Rules/Github - fireball-ts - Branch Protection Rules.png
+              - evidence:
+                  name: Github - flock-terraform- Branch Protection Rules.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-05/CMT-05/Github - Branch Protection Rules/Github - flock-terraform- Branch Protection Rules.png
+              - evidence:
+                  name: Configuration Management Plan StateRAMP.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-05/CMT-05/Flock - Configuration Management Plan/Configuration Management Plan StateRAMP.pdf
+              - evidence:
+                  name: Configuration Management Plan - Peer Review Requirement.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Change Management (CMT_KSI)/CMT-05/CMT-05/Flock - Configuration Management Plan/Configuration Management Plan - Peer Review Requirement.png
+      - KSI:
+          name: Policy and Inventory
+          shortName: PIY
+          Validations:
+          - validation:
+              shortName: PIY-01
+              description: Have an up-to-date information resource inventory or code defining all deployed assets, software, and services
+              implementationStatus: 'Partial'
+              assessmentStatus: 'Partial'
+              Evidences:
+              - evidence:
+                  name: Wiz - AWS Commercial - SBOM.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-01/PIY-01/AWS Commercial - Wiz - SBOM/Wiz - AWS Commercial - SBOM.png
+              - evidence:
+                  name: AWS Asset Count by Type.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-01/PIY-01/Wiz - AWS Commercial - Asset Inventory/AWS Asset Count by Type.xlsx
+              - evidence:
+                  name: Wiz - Prod AWS Services.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-01/PIY-01/AWS Services in Use/Wiz - Prod AWS Services.xlsx
+              - evidence:
+                  name: AWS GovCloud - Wiz - SBOM.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-01/PIY-01/AWS GovCloud - Wiz - SBOM/AWS GovCloud - Wiz - SBOM.png
+          - validation:
+              shortName: PIY-02
+              description: Have policies outlining the security objectives of all information resources
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: ISMS - Security Objectives Section.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-02/PIY-02/Flock - Information Security Management System/ISMS - Security Objectives Section.png
+              - evidence:
+                  name: Data Management System - ISMS_PIMS.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-02/PIY-02/Flock - Information Security Management System/Data Management System - ISMS_PIMS.pdf
+          - validation:
+              shortName: PIY-03
+              description: Maintain a vulnerability disclosure program
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Hacker1 - Flock Safety Home.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-03/PIY-03/HackerOne - Homepage/Hacker1 - Flock Safety Home.png
+          - validation:
+              shortName: PIY-04
+              description: Build security considerations into the Software Development Lifecycle and align with CISA Secure By Design principles
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Cycode - SAST Scanning All Github Orgs.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-04/PIY-04/Cycode - Static Application Security Testing (SAST) Scanning/Cycode - SAST Scanning All Github Orgs.png
+              - evidence:
+                  name: CISA Secure by Design - Pledge Signer - Flock Safety.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-04/PIY-04/CISA - Secure by Design Pledge Signer/CISA Secure by Design - Pledge Signer - Flock Safety.png
+              - evidence:
+                  name: Configuration Management Plan StateRAMP.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-04/PIY-04/Flock - Configuration Management Plan/Configuration Management Plan StateRAMP.pdf
+              - evidence:
+                  name: Configuration Management Plan - Peer Review Requirement.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-04/PIY-04/Flock - Configuration Management Plan/Configuration Management Plan - Peer Review Requirement.png
+          - validation:
+              shortName: PIY-05
+              description: Document methods used to evaluate information resource implementations
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Configuration Management Plan StateRAMP.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-05/PIY-05/Flock - Configuration Management Plan/Configuration Management Plan StateRAMP.pdf
+              - evidence:
+                  name: Configuration Management Plan - Peer Review Requirement.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-05/PIY-05/Flock - Configuration Management Plan/Configuration Management Plan - Peer Review Requirement.png
+          - validation:
+              shortName: PIY-06
+              description: Have a dedicated staff and budget for security with executive support, commensurate with the size, complexity, scope, and risk of the service offering
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Rippling - Security Org Chart.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-06/PIY-06/Flock - Org Chart/Rippling - Security Org Chart.png
+              - evidence:
+                  name: Quarterly Security Planning.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-06/PIY-06/Flock - Security Budget Itemized/Quarterly Security Planning.pdf
+          - validation:
+              shortName: PIY-07
+              description: Document risk management decisions for software supply chain security
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Flock SCRM Guide.docx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-07/PIY-07/Flock - Supply Chain Risk Management Guidelines/Flock SCRM Guide.docx
+              - evidence:
+                  name: Vendor-1.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-07/PIY-07/Vendor Security Risk Analysis/Vendor-1.png
+              - evidence:
+                  name: Vendor-2.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-07/PIY-07/Vendor Security Risk Analysis/Vendor-2.png
+              - evidence:
+                  name: Vendor-3.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-07/PIY-07/Vendor Security Risk Analysis/Vendor-3.png
+              - evidence:
+                  name: Risk Intake Form-SRS-268.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Policy and Inventory (PIY_KSI)/PIY-07/PIY-07/Risk Analysis - Supplier/Risk Intake Form-SRS-268.pdf
+      - KSI:
+          name: Third Party Information Resources
+          shortName: TPR
+          Validations:
+          - validation:
+              shortName: TPR-01
+              description: Identify all third-party information resources
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: List of Flock Core Interconnections.csv
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Third Party Information Resources (TPR_KSI)/TPR-01/TPR-01/System Interconnections/List of Flock Core Interconnections.csv
+          - validation:
+              shortName: TPR-02
+              description: Regularly confirm that services handling federal information or are likely to impact the confidentiality, integrity, or availability of federal information are FedRAMP authorized and securely configured
+              implementationStatus: 'Partial'
+              assessmentStatus: 'Partial'
+              Evidences: []
+          - validation:
+              shortName: TPR-03
+              description: Identify and prioritize mitigation of potential supply chain risks
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Flock SCRM Guide.docx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Third Party Information Resources (TPR_KSI)/TPR-03/TPR-03/Flock - Supply Chain Risk Management Guidelines/Flock SCRM Guide.docx
+              - evidence:
+                  name: Risk Intake Form-SRS-268.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Third Party Information Resources (TPR_KSI)/TPR-03/TPR-03/Risk Analysis - Supplier/Risk Intake Form-SRS-268.pdf
+          - validation:
+              shortName: TPR-04
+              description: Monitor third party software information resources for upstream vulnerabilities, with contractual notification requirements or active monitoring services
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: List of Flock Core Interconnections.csv
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Third Party Information Resources (TPR_KSI)/TPR-04/TPR-04/System Interconnections/List of Flock Core Interconnections.csv
+              - evidence:
+                  name: TPR-4 1.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Third Party Information Resources (TPR_KSI)/TPR-04/TPR-04/Vendor Annual Review/TPR-4 1.png
+              - evidence:
+                  name: TPR-4 3.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Third Party Information Resources (TPR_KSI)/TPR-04/TPR-04/Vendor Annual Review/TPR-4 3.png
+              - evidence:
+                  name: TPR-4 2.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Third Party Information Resources (TPR_KSI)/TPR-04/TPR-04/Vendor Annual Review/TPR-4 2.png
+              - evidence:
+                  name: TPR-4 4.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Third Party Information Resources (TPR_KSI)/TPR-04/TPR-04/Vendor Annual Review/TPR-4 4.png
+      - KSI:
+          name: Cybersecurity Education
+          shortName: CED
+          Validations:
+          - validation:
+              shortName: CED-01
+              description: Ensure all employees receive security awareness training
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: KnowBe4 - 2024 Security Awareness Training.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cybersecurity Education (CED_KSI)/CED-01/CED-01/KnowBe4 - Annual Security Awareness Training/KnowBe4 - 2024 Security Awareness Training.png
+              - evidence:
+                  name: 2024 Security Awareness Training.xlsx
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cybersecurity Education (CED_KSI)/CED-01/CED-01/KnowBe4 - Annual Security Awareness Training/2024 Security Awareness Training.xlsx
+          - validation:
+              shortName: CED-02
+              description: Require role-specific training for high risk roles, including at least roles with privileged access
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: 2024 - BCP Tabletop Checklist for AWS GovCloud.docx.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cybersecurity Education (CED_KSI)/CED-02/CED-02/Flock - BCP/DR Tabletop/2024 - BCP Tabletop Checklist for AWS GovCloud.docx.pdf
+              - evidence:
+                  name: AUG2024 - BCP Tabletop Exercise - AWS Commercial Cloud.docx.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cybersecurity Education (CED_KSI)/CED-02/CED-02/Flock - BCP/DR Tabletop/AUG2024 - BCP Tabletop Exercise - AWS Commercial Cloud.docx.pdf
+              - evidence:
+                  name: 2025 - Incident Response Tabletops.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cybersecurity Education (CED_KSI)/CED-02/CED-02/Flock - Incident Response Tabletop Exercise/2025 - Incident Response Tabletops.png
+              - evidence:
+                  name: Incident Response Tabletop Exercise_ Credential Compromise and SaaS Data Exfiltration Attempt.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cybersecurity Education (CED_KSI)/CED-02/CED-02/Flock - Incident Response Tabletop Exercise/Incident Response Tabletop Exercise_ Credential Compromise and SaaS Data Exfiltration Attempt.pdf
+              - evidence:
+                  name: Flock Safety Readiness Review Tabletop Exercise Outcomes.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cybersecurity Education (CED_KSI)/CED-02/CED-02/Flock - Incident Response Tabletop Exercise/Flock Safety Readiness Review Tabletop Exercise Outcomes.pdf
+              - evidence:
+                  name: Secure Developer Training - Sheet2.csv
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Cybersecurity Education (CED_KSI)/CED-02/CED-02/KnowBe4 - Secure Developer Training/Secure Developer Training - Sheet2.csv
+      - KSI:
+          name: Recovery Planning
+          shortName: RPL
+          Validations:
+          - validation:
+              shortName: RPL-01
+              description: Define Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO)
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: SLA Schedule - Risk and Compliance - Confluence.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Recovery Planning (RPL_KSI)/RPL-01/RPL-01/Flock - SLA Schedule/SLA Schedule - Risk and Compliance - Confluence.pdf
+          - validation:
+              shortName: RPL-02
+              description: Develop and maintain a recovery plan that aligns with the defined recovery objectives
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: 2024 - BCP Tabletop Checklist for AWS GovCloud.docx.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Recovery Planning (RPL_KSI)/RPL-02/RPL-02/Flock - BCP/DR Tabletop/2024 - BCP Tabletop Checklist for AWS GovCloud.docx.pdf
+              - evidence:
+                  name: AUG2024 - BCP Tabletop Exercise - AWS Commercial Cloud.docx.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Recovery Planning (RPL_KSI)/RPL-02/RPL-02/Flock - BCP/DR Tabletop/AUG2024 - BCP Tabletop Exercise - AWS Commercial Cloud.docx.pdf
+              - evidence:
+                  name: BUSINESS CONTINUITY PLAN (BCP).pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Recovery Planning (RPL_KSI)/RPL-02/RPL-02/Flock - BCP /BUSINESS CONTINUITY PLAN (BCP).pdf
+              - evidence:
+                  name: SLA Schedule - Risk and Compliance - Confluence.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Recovery Planning (RPL_KSI)/RPL-02/RPL-02/Flock - SLA Schedule/SLA Schedule - Risk and Compliance - Confluence.pdf
+          - validation:
+              shortName: RPL-03
+              description: Perform system backups aligned with recovery objectives
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: AWS GovCloud - Wiz - RDS Instances Automated Backups.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Recovery Planning (RPL_KSI)/RPL-03/RPL-03/AWS GovCloud - Wiz - Automated Backups/AWS GovCloud - Wiz - RDS Instances Automated Backups.png
+              - evidence:
+                  name: AWS Commercial - Wiz - Database Automated Backups.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Recovery Planning (RPL_KSI)/RPL-03/RPL-03/AWS Commercial - Wiz - Automated Backups/AWS Commercial - Wiz - Database Automated Backups.png
+              - evidence:
+                  name: SLA Schedule - Risk and Compliance - Confluence.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Recovery Planning (RPL_KSI)/RPL-03/RPL-03/Flock - SLA Schedule/SLA Schedule - Risk and Compliance - Confluence.pdf
+          - validation:
+              shortName: RPL-04
+              description: Regularly test the capability to recover from incidents and contingencies
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: 2024 - BCP Tabletop Checklist for AWS GovCloud.docx.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Recovery Planning (RPL_KSI)/RPL-04/RPL-04/Flock - BCP/DR Tabletop/2024 - BCP Tabletop Checklist for AWS GovCloud.docx.pdf
+              - evidence:
+                  name: AUG2024 - BCP Tabletop Exercise - AWS Commercial Cloud.docx.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Recovery Planning (RPL_KSI)/RPL-04/RPL-04/Flock - BCP/DR Tabletop/AUG2024 - BCP Tabletop Exercise - AWS Commercial Cloud.docx.pdf
+              - evidence:
+                  name: 2025 - Incident Response Tabletops.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Recovery Planning (RPL_KSI)/RPL-04/RPL-04/Flock - Incident Response Tabletop Exercise/2025 - Incident Response Tabletops.png
+              - evidence:
+                  name: Incident Response Tabletop Exercise_ Credential Compromise and SaaS Data Exfiltration Attempt.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Recovery Planning (RPL_KSI)/RPL-04/RPL-04/Flock - Incident Response Tabletop Exercise/Incident Response Tabletop Exercise_ Credential Compromise and SaaS Data Exfiltration Attempt.pdf
+              - evidence:
+                  name: Flock Safety Readiness Review Tabletop Exercise Outcomes.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Recovery Planning (RPL_KSI)/RPL-04/RPL-04/Flock - Incident Response Tabletop Exercise/Flock Safety Readiness Review Tabletop Exercise Outcomes.pdf
+      - KSI:
+          name: Incident Reporting
+          shortName: INR
+          Validations:
+          - validation:
+              shortName: INR-01
+              description: Report incidents according to FedRAMP requirements and cloud service provider policies
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: Incident Response Plan.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Incident Reporting (INR_KSI)/INR-01/INR-01/Flock - Incident Reporting/Incident Response Plan.pdf
+              - evidence:
+                  name: Incidents - Attestation of No Incidents Requiring FedRAMP Reporting.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Incident Reporting (INR_KSI)/INR-01/INR-01/Flock - Incident Reporting/Incidents - Attestation of No Incidents Requiring FedRAMP Reporting.png
+              - evidence:
+                  name: Incident Reporting Contact - Manager of Security Operations.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Incident Reporting (INR_KSI)/INR-01/INR-01/Flock - Incident Reporting/Incident Reporting Contact - Manager of Security Operations.png
+          - validation:
+              shortName: INR-02
+              description: Maintain a log of incidents and periodically review past incidents for patterns or vulnerabilities
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: FLOCK_Monthly_Customer_Report.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Incident Reporting (INR_KSI)/INR-02/INR-02/AirMDR - Monthly Report/FLOCK_Monthly_Customer_Report.pdf
+          - validation:
+              shortName: INR-03
+              description: Generate after action reports and regularly incorporate lessons learned into operations
+              implementationStatus: 'True'
+              assessmentStatus: 'True'
+              Evidences:
+              - evidence:
+                  name: 01072025 API Key and Hard-coded Credentials Aerodome Website Security Incident Report.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Incident Reporting (INR_KSI)/INR-03/INR-03/Flock - Incident Sample/01072025 API Key and Hard-coded Credentials Aerodome Website Security Incident Report.pdf
+              - evidence:
+                  name: Zoomies - Retrospective.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Incident Reporting (INR_KSI)/INR-03/INR-03/Flock - Incident Sample/Zoomies - Retrospective.png
+              - evidence:
+                  name: Incident Lessons Learned Section.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Incident Reporting (INR_KSI)/INR-03/INR-03/Flock - Incident Sample/Incident Lessons Learned Section.png
+              - evidence:
+                  name: Zoomies Incident 5_29_2025.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Incident Reporting (INR_KSI)/INR-03/INR-03/Flock - Incident Sample/Zoomies Incident 5_29_2025.pdf
+              - evidence:
+                  name: 2025 - Incident Response Tabletops.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Incident Reporting (INR_KSI)/INR-03/INR-03/Flock - Incident Response Tabletop Exercise/2025 - Incident Response Tabletops.png
+              - evidence:
+                  name: Incident Response Tabletop Exercise_ Credential Compromise and SaaS Data Exfiltration Attempt.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Incident Reporting (INR_KSI)/INR-03/INR-03/Flock - Incident Response Tabletop Exercise/Incident Response Tabletop Exercise_ Credential Compromise and SaaS Data Exfiltration Attempt.pdf
+              - evidence:
+                  name: Flock Safety Readiness Review Tabletop Exercise Outcomes.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Incident Reporting (INR_KSI)/INR-03/INR-03/Flock - Incident Response Tabletop Exercise/Flock Safety Readiness Review Tabletop Exercise Outcomes.pdf
+              - evidence:
+                  name: Security Incident Report Template.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Incident Reporting (INR_KSI)/INR-03/INR-03/Flock - Google Drive - Incidents/Security Incident Report Template.pdf
+              - evidence:
+                  name: Flock - Google Drive - Past Incidents.png
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Incident Reporting (INR_KSI)/INR-03/INR-03/Flock - Google Drive - Incidents/Flock - Google Drive - Past Incidents.png
+              - evidence:
+                  name: IR Template.pdf
+                  Artifacts:
+                  - artifact:
+                      reference: evidences/Incident Reporting (INR_KSI)/INR-03/INR-03/Flock - Google Drive - Incidents/IR Template.pdf
