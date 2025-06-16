@@ -67,7 +67,7 @@ Our draft package submission is represented using YAML due to its simplicity.
 ---
 
 ## 📑 Assessment File Structure
-The machine-readable assessment file is a YAML file with the following structure (see [machine-readable-package/schema.yaml](machine-readable-package/schema.yaml)):
+The machine-readable assessment file is a YAML file with the following structure (see full YAML file here -- [images/flock_safety_20x_scrubbed.yaml](https://github.com/flocksafety/flock-core-fedramp20x/blob/master/images/flock_safety_20x_scrubbed.yaml)):
 
 ```yaml
 Package:
@@ -114,8 +114,10 @@ Package:
     remarks: <assessment remarks>
 ```
 
-#### <a href="https://flocksafety.com](https://github.com/flocksafety/flock-core-fedramp20x/blob/master/images/Assessment%20Methodology.pdf">
-   Assessment Methodology</a>
+#### Assessment Methodology</a>
+
+(see [machine-readable-package/schema.yaml](https://github.com/flocksafety/flock-core-fedramp20x/blob/master/images/Assessment%20Methodology.pdf))
+
 ![Assessment Methodolgy](https://raw.githubusercontent.com/flocksafety/flock-core-fedramp20x/refs/heads/master/images/Signed%203PAO%20Assessment%20Methodology.png?token=GHSAT0AAAAAAC5XQLLV6AK7AAUUKU6YYZWE2CQG7DA)
 
 ### Step 6 - Continuous Reporting Indication
