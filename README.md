@@ -136,4 +136,4 @@ Similar to the Continuous Reporting capability, the package will be available ei
 
 
 ## 📩 Contact
-Reach out robert.otten@flocksafety.com for questions.
+Reach out to robert.otten@flocksafety.com for questions.
