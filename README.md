@@ -67,7 +67,7 @@ Our draft package submission is represented using YAML due to its simplicity.
 ---
 
 ## 📑 Assessment File Structure
-The machine-readable assessment file is a YAML file with the following structure (see full YAML file here -- [images/flock_safety_20x_scrubbed.yaml](https://github.com/flocksafety/flock-core-fedramp20x/blob/master/images/flock_safety_20x_scrubbed.yaml)):
+The machine-readable assessment file is a YAML file with the following structure (see full YAML file here -- [images/flock_safety_20x_scrubbed_v2.yaml](https://github.com/flocksafety/flock-core-fedramp20x/blob/master/images/flock_safety_20x_compliance_scrubbed_v2.yaml)
 
 ```yaml
 Package:
