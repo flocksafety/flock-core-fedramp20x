@@ -1,0 +1,5 @@
+policies:
+- claims:
+    repository: flocksafety/flock-core-fedramp20x
+  permissions:
+    contents: write
