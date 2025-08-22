@@ -1,0 +1,30 @@
+name: Promote to Public Repo
+
+on:
+  push:
+    branches:
+      - public-release
+  workflow_dispatch:
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: flocksafety/flock-gha-token-dispenser/dispense-token@develop
+        id: installtoken
+        with:
+          repo: flocksafety/flock-core-fedramp20x
+          permissions: |
+            contents: write
+
+      - name: Checkout private repository
+        uses: actions/checkout@v4
+        with:
+          ref: public-release
+
+      - name: Push to public repository
+        env:
+          GH_TOKEN: ${{ steps.installtoken.outputs.token }}
+        run: |
+          git remote add public-mirror https://github.com/flocksafety/flock-core-fedramp20x.git
+          git push public-mirror public-release:master
