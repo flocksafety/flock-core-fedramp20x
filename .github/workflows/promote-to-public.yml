@@ -8,7 +8,7 @@ on:
 
 permissions:
   id-token: write
-  contents: read
+  contents: write
   actions: read
 
 jobs:
@@ -27,10 +27,13 @@ jobs:
           permissions: |
             contents: write
 
-
       - name: Push to public repository
         env:
           GH_TOKEN: ${{ steps.installtoken.outputs.token }}
+          ACTIONS_STEP_DEBUG: true
         run: |
+          git config --global credential.helper 'cache --timeout=3600'
+          git config --global url."https://oauth2:${GH_TOKEN}@github.com/".insteadOf "https://github.com/"
+
           git remote add public-mirror https://github.com/flocksafety/flock-core-fedramp20x.git
           git push public-mirror public-release:master
