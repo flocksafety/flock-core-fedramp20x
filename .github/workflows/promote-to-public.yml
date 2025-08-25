@@ -6,6 +6,9 @@ on:
       - public-release
   workflow_dispatch:
 
+permissions:
+  id-token: write
+
 jobs:
   promote:
     runs-on: ubuntu-latest
