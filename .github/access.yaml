@@ -1,6 +1,5 @@
 policies:
 - claims:
     repository: flocksafety/flock-core-fedramp20x-internal
-    ref: refs/heads/public-release
   permissions:
     contents: write
