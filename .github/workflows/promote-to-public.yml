@@ -8,11 +8,18 @@ on:
 
 permissions:
   id-token: write
+  contents: read
+  actions: read
 
 jobs:
   promote:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout private repository
+        uses: actions/checkout@v4
+        with:
+          ref: public-release
+
       - uses: flocksafety/flock-gha-token-dispenser/dispense-token@develop
         id: installtoken
         with:
@@ -20,10 +27,6 @@ jobs:
           permissions: |
             contents: write
 
-      - name: Checkout private repository
-        uses: actions/checkout@v4
-        with:
-          ref: public-release
 
       - name: Push to public repository
         env:
